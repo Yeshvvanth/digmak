@@ -1,0 +1,9 @@
+{%extends 'base.html'%} 
+
+{%block profile%}
+  <span><a href="{% url 'customer:profile'%}">Hello,{{request.user}}</span>
+
+  <span><a href="{% url 'customer:logout'%}">Logout</a></span>
+  
+
+{%endblock%}
